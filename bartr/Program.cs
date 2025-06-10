@@ -1,3 +1,4 @@
+using System;
 using
     Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -6,6 +7,11 @@ using bartr.Client.Pages;
 using bartr.Components;
 using bartr.Components.Account;
 using bartr.Data;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 

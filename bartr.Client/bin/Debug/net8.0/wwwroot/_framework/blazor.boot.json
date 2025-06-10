@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "bartr.Client",
   "resources": {
-    "hash": "sha256-iqiVGmrSQ3gE7CCUO2OBQ0W7teQvdAWDZD931z5tLgQ=",
+    "hash": "sha256-tj2W2PElUfsHXMU9EEaeGx/vem2cEQtzjPVnDpUlua8=",
     "jsModuleNative": {
       "dotnet.native.8.0.13.jsiwxkcj0g.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -210,10 +210,10 @@
       "mscorlib.wasm": "sha256-RAf5jgXLg+06C4tJ3CabxAZaVjCN2/+E6fxRjRN8yHk=",
       "netstandard.wasm": "sha256-KCAE8RQwTurP5pGnGF819qf9sK++2O0rXzt6tOjlfi8=",
       "System.Private.CoreLib.wasm": "sha256-LQqLbHgeEX4HONx7GwIxGgmzIXP6n2OPxqnq+/4Tyqk=",
-      "bartr.Client.wasm": "sha256-eyasQxuC6FDBT66lcRJYKaquEEtvel0gSBxjQLm9ZwA="
+      "bartr.Client.wasm": "sha256-hXB9yYAEOS2Ajki5hK/ift6uLfycSVsXPhBCd1I9EBA="
     },
     "pdb": {
-      "bartr.Client.pdb": "sha256-CkVUlt8mSSizoZecDokn3nOOd079dP9yP3Lr8thigO4="
+      "bartr.Client.pdb": "sha256-JfzuLga/bIebMh811h/icv+QyvO9vzqkFVmrnvBwW+c="
     }
   },
   "cacheBootResources": true,

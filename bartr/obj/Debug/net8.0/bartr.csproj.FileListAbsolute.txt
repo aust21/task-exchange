@@ -14,8 +14,8 @@
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/BlazorDebugProxy/Microsoft.NET.WebAssembly.Webcil.dll
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/BlazorDebugProxy/Microsoft.SymbolStore.dll
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/BlazorDebugProxy/Newtonsoft.Json.dll
-/home/austin/projects/bartr/bartr/bin/Debug/net8.0/bartr.staticwebassets.runtime.json
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/Data/app.db
+/home/austin/projects/bartr/bartr/bin/Debug/net8.0/bartr.staticwebassets.runtime.json
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/bartr
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/bartr.deps.json
 /home/austin/projects/bartr/bartr/bin/Debug/net8.0/bartr.runtimeconfig.json

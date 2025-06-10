@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authentication;
@@ -10,6 +13,10 @@ using Microsoft.Extensions.Primitives;
 using bartr.Components.Account.Pages;
 using bartr.Components.Account.Pages.Manage;
 using bartr.Data;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace Microsoft.AspNetCore.Routing;
 

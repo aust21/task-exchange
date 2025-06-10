@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bartr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c671380eff2526e7d9d61f4c81ba322fb4506f8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0060a3d97021fb146c82a481b7362c5006e949f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("bartr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bartr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
