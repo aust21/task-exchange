@@ -1,6 +1,6 @@
-bartr.Client/bin/
+client/bin/
 node_modules/
-bartr.Client/obj/
-bartr/bin/
-bartr/obj/
+client/obj/
+server/bin/
+server/obj/
 .idea/
