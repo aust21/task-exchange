@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bartr.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c671380eff2526e7d9d61f4c81ba322fb4506f8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("bartr.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bartr.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

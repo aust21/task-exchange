@@ -22,16 +22,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/austin/projects/bartr/bartr.Client
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/austin/projects/bartr/bartr.Client/Pages/Auth.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/austin/projects/bartr/bartr.Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[/home/austin/projects/bartr/bartr.Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/austin/projects/bartr/bartr.Client/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = UmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/austin/projects/bartr/bartr.Client/Shared/Componets/Navigation.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmV0cy9OYXZpZ2F0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/austin/projects/bartr/bartr.Client/_Imports.razor]
