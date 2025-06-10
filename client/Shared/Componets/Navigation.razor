@@ -1,10 +1,44 @@
-<header class="bg-white px-16 py-4 fixed top-0 left-0 w-full">
-    <nav class="w-full">
+@using bartr.Client.constants
+<header class="bg-white px-16 py-10 fixed top-0 left-0 w-full flex justify-between items-center">
+    <nav class="w-full flex justify-between items-center">
         <NavLink
             href="/"
             Match="NavLinkMatch.All">
-            Home
+            <img src="@Icons.Logo" alt="logo" class="w-[10rem]">
         </NavLink>
+        
+        <ul class="flex justify-between items-center gap-10">
+            <li class="m-plus-rounded-1c-regular text-sm">
+                <NavLink
+                    href="/"
+                    Match="NavLinkMatch.All">
+                    About
+                </NavLink>
+            </li>
+            <li class="m-plus-rounded-1c-regular text-sm">
+                <NavLink
+                    href="/"
+                    Match="NavLinkMatch.All">
+                    How it works
+                </NavLink>
+            </li>
+            <li class="m-plus-rounded-1c-regular text-sm">
+                <NavLink
+                    href="/"
+                    Match="NavLinkMatch.All">
+                    Support
+                </NavLink>
+            </li>
+        </ul>
+        <ul class="rounded-full px-5 py-2 bg-[#ffdfca]">
+            <li class="m-plus-rounded-1c-regular text-sm">
+                <NavLink
+                    href="/"
+                    Match="NavLinkMatch.All">
+                    Community Center
+                </NavLink>
+            </li>
+        </ul>
     </nav>
 </header>
 
