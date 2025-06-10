@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bartr", "bartr\bartr.csproj", "{1ADC2349-FF56-4DD5-BC3D-4C97DD488748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bartr.Client", "bartr.Client\bartr.Client.csproj", "{DBCA582F-8C01-4701-92B7-8B9D3A749D93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ADC2349-FF56-4DD5-BC3D-4C97DD488748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADC2349-FF56-4DD5-BC3D-4C97DD488748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADC2349-FF56-4DD5-BC3D-4C97DD488748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADC2349-FF56-4DD5-BC3D-4C97DD488748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBCA582F-8C01-4701-92B7-8B9D3A749D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCA582F-8C01-4701-92B7-8B9D3A749D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCA582F-8C01-4701-92B7-8B9D3A749D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCA582F-8C01-4701-92B7-8B9D3A749D93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
