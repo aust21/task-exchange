@@ -2,3 +2,5 @@ bartr.Client/bin/
 node_modules/
 bartr.Client/obj/
 bartr/bin/
+bartr/obj/
+.idea
