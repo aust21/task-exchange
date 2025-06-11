@@ -1,6 +1,47 @@
 @using bartr.Components.Account.Pages
-<div class="n bg-white rounded-3xl" style="padding: 1rem">
-    
+<div class="w-[30%]">
+    <EditForm 
+        Model="Input"
+        method="post"
+        OnValidSubmit="LoginUser"
+        FormName="login"
+        
+    >
+        <DataAnnotationsValidator/>
+        <ValidationSummary class="text-danger" role="alert"/>
+        <div class="mb-4">
+            <label for="email" class="form-label block text-sm mb-1 text-gray-500 font-semibold">Email</label>
+            <InputText
+
+                @bind-Value="Input.Email"
+                class="form-control block outline outline-[#88acfb]
+                     rounded-full w-full px-4 py-1 placeholder:text-sm placeholder:text-gray-300"
+                autocomplete="username"
+                aria-required="true"
+                placeholder="name@example.com"/>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="password" class="form-label mb-1 text-gray-500 font-semibold">Password</label>
+            <InputText
+                type="password"
+                @bind-Value="Input.Password"
+                class="form-control block outline outline-[#88acfb]
+                     rounded-full w-full px-4 py-1 placeholder:text-sm placeholder:text-gray-300"
+                autocomplete="current-password"
+                aria-required="true"
+                placeholder="austin@secure_password"/>
+        </div>
+        <div class="mt-8">
+            <div class="flex justify-end items-end mb-1">
+                <a href="/forgot" class="text-sm underline">Forgot password?</a>
+            </div>    
+            <button type="submit" class="w-full rounded-full bg-[#88acfb] py-2 text-sm">Log in</button>
+            <p class="text-sm text-center mt-3">
+                Already have an account? <a href="/sign-in" class="underline"> Sign in</a>
+            </p>
+        </div>
+            
+    </EditForm>
 </div>
 
 @code {
