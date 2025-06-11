@@ -1,0 +1,11 @@
+@using bartr.Components.Account.Pages
+<div class="n bg-white rounded-3xl" style="padding: 1rem">
+    
+</div>
+
+@code {
+    [Parameter] public Login.InputModel Input { get; set; } = new();
+    
+    [Parameter]
+    public EventCallback LoginUser { get; set; }
+}
