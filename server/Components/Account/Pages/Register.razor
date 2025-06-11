@@ -1,4 +1,4 @@
-﻿@page "/Account/Register"
+﻿@page "/sign-up"
 
 @using System.ComponentModel.DataAnnotations
 @using System.Text
@@ -17,44 +17,60 @@
 @inject NavigationManager NavigationManager
 @inject IdentityRedirectManager RedirectManager
 
-<PageTitle>Register</PageTitle>
+<PageTitle>Task Exchange | Register</PageTitle>
 
-<h1>Register</h1>
-
-<div class="row">
-    <div class="col-md-4">
+<section class="min-h-screen flex justify-center items-center">
+    <div class="w-[30%]">
         <StatusMessage Message="@Message"/>
         <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser" FormName="register">
             <DataAnnotationsValidator/>
-            <h2>Create a new account.</h2>
-            <hr/>
             <ValidationSummary class="text-danger" role="alert"/>
-            <div class="form-floating mb-3">
-                <InputText @bind-Value="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com"/>
-                <label for="email">Email</label>
+            <div class="form-floating mb-4">
+                <label for="email" class="block text-sm mb-1 text-gray-500 font-semibold">Email</label>
+                <InputText
+                    @bind-Value="Input.Email"
+                    class="form-control block outline outline-[#88acfb]
+                     rounded-full w-full px-4 py-1 placeholder:text-sm placeholder:text-gray-300"
+                    autocomplete="username"
+                    aria-required="true"
+                    placeholder="name@example.com"/>
                 <ValidationMessage For="() => Input.Email" class="text-danger"/>
             </div>
-            <div class="form-floating mb-3">
-                <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password"/>
-                <label for="password">Password</label>
+            <div class="form-floating mb-4">
+                <label for="password" class="block text-sm mb-1 text-gray-500 font-semibold">Password</label>
+                <InputText
+                    type="password"
+                    @bind-Value="Input.Password"
+                    class="form-control block outline outline-[#88acfb]
+                     rounded-full w-full px-4 py-1 placeholder:text-sm placeholder:text-gray-300"
+                    autocomplete="new-password"
+                    aria-required="true"
+                    placeholder="password"/>
                 <ValidationMessage For="() => Input.Password" class="text-danger"/>
             </div>
-            <div class="form-floating mb-3">
-                <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password"/>
-                <label for="confirm-password">Confirm Password</label>
+            <div class="form-floating mb-4">
+                <label for="confirm-password" class="block text-sm mb-1 text-gray-500 font-semibold">Confirm Password</label>
+                <InputText
+                    type="password"
+                    @bind-Value="Input.ConfirmPassword"
+                    class="form-control block outline outline-[#88acfb]
+                     rounded-full w-full px-4 py-1 placeholder:text-sm placeholder:text-gray-300"
+                    autocomplete="new-password"
+                    aria-required="true"
+                    placeholder="password"/>
                 <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger"/>
             </div>
-            <button type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <div class="mt-8">
+                <button type="submit" class="w-full rounded-full bg-[#88acfb] py-2 text-sm">Sign up</button>
+                <p class="text-sm text-center mt-3">
+                    Have an account? <a href="/sign-up" class="underline"> Sign in</a>
+                </p>
+            </div>
         </EditForm>
     </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr/>
-            <ExternalLoginPicker/>
-        </section>
-    </div>
-</div>
+</section>
+
+
 
 @code {
     private IEnumerable<IdentityError>? identityErrors;
