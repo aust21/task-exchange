@@ -1,0 +1,28 @@
+@page "/"
+@using client.constants
+<PageTitle>Task Exchange</PageTitle>
+<section 
+    class="min-h-screen relative no-repeat bg-cover" 
+    style="background-image: url(@Images.Hands); background-position: bottom"
+    >
+        <div class="absolute top-1/2 left-[35%] translate-x-[-50%]">
+            <h1 class="text-[5rem] text-white">Task Exchange</h1>
+            <ul class="flex items-center gap-[3rem]">
+                <li class="font-semibold text-sm bg-[#89e581] px-4 py-2 rounded-full">
+                    <NavLink Match="NavLinkMatch.All" href="/community">
+                        Community center
+                    </NavLink>
+                </li>
+                
+                <li class="font-semibold text-sm text-white border border-[#89e581] px-4 py-2 rounded-full">
+                    <NavLink Match="NavLinkMatch.All" href="/how-it-works">
+                        How it works
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+</section>
+
+@code {
+    
+}
