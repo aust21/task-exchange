@@ -1,0 +1,90 @@
+@using bartr.Client.constants
+@using client.constants
+<header class="w-full py-3 px-5 fixed top-0 left-0 shadow-md z-[11111111] bg-white">
+    <nav class="flex justify-between items-center">
+        <div class="flex justify-between items-center w-[30%] gap-5">
+            <img src="@Icons.Logo" alt="Logo" class="w-[3rem]">
+            <div class="w-full outline outline-[#88acfb] rounded-full px-4 py-1">
+                <EditForm
+                    Model="Input"
+                    method="post"
+                    OnValidSubmit="HandleSubmit"
+                    FormName="login">
+                    <div class="form-floating flex justify-between items-center">
+                        <InputText
+                            type="text"
+                            @bind-Value="Input.SearchParameter"
+                            class="form-control block placeholder:text-sm placeholder:text-gray-300"
+                            aria-required="false"
+                            placeholder="Search tasks to exchange"/>
+                        <button
+                            type="submit"
+                            class="cursor-pointer"><img src="@Icons.Search" alt="search" class="w-[1rem]">
+                        </button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+        
+        <ul class="flex justify-between items-center gap-15">
+            <li class="w-[1.5rem]">
+                <NavLink Match="NavLinkMatch.All" href="/">
+                    <img
+                        src="@Icons.Dash"
+                        alt="Profile"
+                        class="w-fit">
+                </NavLink>
+            </li>
+            <li class="w-[1.5rem]">
+                <NavLink Match="NavLinkMatch.All" href="/">
+                    <img
+                        src="@Icons.Tasks"
+                        alt="Profile"
+                        class="w-fit">
+                </NavLink>
+            </li>
+
+            <li class="w-[1.5rem]">
+                <NavLink Match="NavLinkMatch.All" href="/">
+                    <img
+                        src="@Icons.Notification"
+                        alt="Profile"
+                        class="w-fit">
+                </NavLink>
+            </li>
+        </ul>
+
+        <ul class="flex justify-between items-center gap-5">
+                <li class="w-[1.5rem]">
+                    <NavLink Match="NavLinkMatch.All" href="/">
+                        <img
+                            src="@Icons.Settings"
+                            alt="Profile"
+                            class="rounded-full">
+                    </NavLink>
+                </li>
+                <li class="w-[1.5rem]">
+                    <NavLink Match="NavLinkMatch.All" href="/">
+                        <img
+                            src="@Images.Profile"
+                            alt="Profile"
+                            class="rounded-full">
+                    </NavLink>
+                </li>
+            </ul>
+    </nav>
+</header>
+
+@code {
+    
+    [SupplyParameterFromForm] private InputModel Input { get; set; } = new();
+    public sealed class InputModel
+    {
+        public string SearchParameter { get; set; } = "";
+    }
+
+    private void HandleSubmit()
+    {
+        Console.WriteLine("Handled task");
+    }
+}
