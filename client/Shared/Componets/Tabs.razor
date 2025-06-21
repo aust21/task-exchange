@@ -1,9 +1,33 @@
-
-<div class="mx-auto flex gap-10 justify-center items-center mb-4 absolute bottom-0 left-1/2">
-  <a href="" class="bg-gray-200 px-3 py-1 rounded-lg text-sm">Dashboard</a>
-  <a href="" class="px-3 py-1 rounded-lg text-sm">Community</a>
+<!-- Tabs.razor -->
+<div class="mx-auto w-full bg-white flex gap-10 justify-center items-center py-4 fixed top-[10%] left-1/2 -translate-x-1/2 z-[9999]">
+  <button 
+    class="@GetTabClass("Dashboard") cursor-pointer" 
+    @onclick="@(() => HandleClick("Dashboard"))"
+    @onmousedown="@(() => Console.WriteLine("Dashboard mouse down"))">
+    Dashboard
+  </button>
+  <button 
+    class="@GetTabClass("Community") cursor-pointer" 
+    @onclick="@(() => HandleClick("Community"))"
+    @onmousedown="@(() => Console.WriteLine("Community mouse down"))">
+    Community
+  </button>
 </div>
 
 @code {
-  
+  [Parameter] public string ActiveTab { get; set; } = "Dashboard";
+  [Parameter] public EventCallback<string> OnTabSelected { get; set; }
+
+  private async Task HandleClick(string tab)
+  {
+    Console.WriteLine($"Button clicked: {tab}");
+    await OnTabSelected.InvokeAsync(tab);
+  }
+
+  private string GetTabClass(string tab)
+  {
+    return tab == ActiveTab
+      ? "bg-red-400 text-white px-3 py-1 rounded-lg text-sm"
+      : "bg-gray-200 text-black px-3 py-1 rounded-lg text-sm";
+  }
 }

@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
         <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
-        <RootNamespace>bartr.Client</RootNamespace>
+        <RootNamespace>client</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,7 +16,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Pages\Admin\" />
       <Folder Include="wwwroot\assets\icons\" />
       <Folder Include="wwwroot\assets\images\" />
     </ItemGroup>

@@ -3,7 +3,7 @@ using
     Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using bartr.Client.Pages;
+using client.Pages;
 using bartr.Components;
 using bartr.Components.Account;
 using bartr.Data;
@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using server.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,9 +89,10 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(
-        typeof(bartr.Client._Imports).Assembly);
+        typeof(client._Imports).Assembly);
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
 
 app.Run();
+
