@@ -1,11 +1,9 @@
 @inherits LayoutComponentBase
 <TopBar />
-<main class="bg-white pt-[5rem]">
+<main class="bg-white py-[4rem] relative">
+    <Tabs />
     <section class="flex justify-between">
-        <SideBar />
-        <div class="p-5 rounded-3xl w-[20%]">
-            
-        </div>
+        <SideBar/>
         @Body
     </section>
 </main>
