@@ -4,4 +4,3 @@ client/obj/
 server/bin/
 server/obj/
 .idea/
-server/appsettings.json
