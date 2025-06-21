@@ -23,12 +23,7 @@ git clone https://github.com/aust21/task-exchange.git
 ```bash
 cd task-exchange/server
 ```
-3. Copy and paste the database config in appsettings.json file in the server directory
-```bash
-  "ConnectionStrings": {
-    "PostgresConnection": "Host=your_host;Database=TaskExchange;Username=your_username;Password=your_password"
-  }
-```
+3. Modify database config in appsettings.json file in the server directory
 4. Restore dependencies
 ```bash
 dotnet restore 
