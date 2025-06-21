@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
@@ -15,6 +16,7 @@
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --font-weight-semibold: 600;
+    --radius-xl: 0.75rem;
     --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -190,9 +192,6 @@
   .left-\[35\%\] {
     left: 35%;
   }
-  .-z-1 {
-    z-index: calc(1 * -1);
-  }
   .z-\[111111\] {
     z-index: 111111;
   }
@@ -205,11 +204,14 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .block {
     display: block;
@@ -217,17 +219,11 @@
   .flex {
     display: flex;
   }
-  .h-\[50px\] {
-    height: 50px;
-  }
   .h-\[150px\] {
     height: 150px;
   }
-  .h-\[550px\] {
-    height: 550px;
-  }
-  .min-h-\[80vh\] {
-    min-height: 80vh;
+  .h-full {
+    height: 100%;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -237,9 +233,6 @@
   }
   .w-\[1rem\] {
     width: 1rem;
-  }
-  .w-\[2rem\] {
-    width: 2rem;
   }
   .w-\[3rem\] {
     width: 3rem;
@@ -252,9 +245,6 @@
   }
   .w-\[30\%\] {
     width: 30%;
-  }
-  .w-\[40\%\] {
-    width: 40%;
   }
   .w-\[75\%\] {
     width: 75%;
@@ -293,14 +283,14 @@
   .gap-\[3rem\] {
     gap: 3rem;
   }
-  .gap-\[5rem\] {
-    gap: 5rem;
-  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -309,20 +299,14 @@
   .border-\[\#89e581\] {
     border-color: #89e581;
   }
-  .bg-\[\#88acfb\] {
-    background-color: #88acfb;
-  }
   .bg-\[\#89e581\] {
     background-color: #89e581;
   }
   .bg-\[\#ffdfca\] {
     background-color: #ffdfca;
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -356,9 +340,6 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
-  }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
   }
   .pt-\[5rem\] {
     padding-top: 5rem;
