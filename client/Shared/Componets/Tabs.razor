@@ -1,9 +1,11 @@
+@using bartr.Client.constants
 <!-- Tabs.razor -->
 <div class="mx-auto w-full bg-white flex gap-10 justify-center items-center py-4 fixed top-[10%] left-1/2 -translate-x-1/2 z-[9999]">
-  <button 
-    class="@GetTabClass("Dashboard") cursor-pointer" 
-    @onclick="@(() => HandleClick("Dashboard"))"
+  <button
+    class="@GetTabClass("DashOverview") cursor-pointer flex items-center gap-2"
+    @onclick="@(() => HandleClick("DashOverview"))"
     @onmousedown="@(() => Console.WriteLine("Dashboard mouse down"))">
+    <img src="@Icons.Dash" class="w-[20px]">
     Dashboard
   </button>
   <button 
@@ -12,10 +14,16 @@
     @onmousedown="@(() => Console.WriteLine("Community mouse down"))">
     Community
   </button>
+  <button
+    class="@GetTabClass("Create") cursor-pointer flex items-center gap-2"
+    @onclick="@(() => HandleClick("Create"))">
+    <img src="@Icons.Tasks" class="w-[20px]">
+    Create
+  </button>
 </div>
 
 @code {
-  [Parameter] public string ActiveTab { get; set; } = "Dashboard";
+  [Parameter] public string ActiveTab { get; set; } = "DashOverview";
   [Parameter] public EventCallback<string> OnTabSelected { get; set; }
 
   private async Task HandleClick(string tab)

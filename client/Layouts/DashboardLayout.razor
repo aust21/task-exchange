@@ -2,28 +2,17 @@
 
 <TopBar />
 <main class="bg-white py-[4rem] relative">
-  <Tabs ActiveTab="@selectedTab" OnTabSelected="@HandleTabChanged" />
+  
   <section class="bg-white flex">
     <SideBar />
     <div class="w-[20%] h-full bg-red-400"></div>
-    @if (selectedTab == "Dashboard")
-    {
+    
+    
       <Dashboard />
-    }
-    else if (selectedTab == "Community")
-    {
-      <Community />
-    }
+    
   </section>
 </main>
 
 @code {
-  private string selectedTab = "Dashboard";
-
-  private async Task HandleTabChanged(string tab)
-  {
-    Console.WriteLine($"Tab changed to: {tab}");
-    selectedTab = tab;
-    await InvokeAsync(StateHasChanged); // Ensure async rendering
-  }
+  
 }
